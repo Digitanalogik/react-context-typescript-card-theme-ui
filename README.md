@@ -1,3 +1,20 @@
+
+# Digitanalogik Scrum Poker
+
+## Experiment to create customizable user interface with React and share sate between components using Context.
+
+This project utilizes TypeScript, a typed superset of JavaScript, to provide static type checking and improved developer productivity. By combining TypeScript with React, we are able to build robust and maintainable components that are less prone to errors, ensuring a high-quality codebase for the application.
+
+React Context is leveraged to manage state across the application, allowing for seamless data sharing between components without the need for prop drilling. This approach not only simplifies the code structure, but also enhances performance and makes the application more scalable.
+
+
+```
+~Tatu Soininen~
+  -=[ 2023 ]=-
+```
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
