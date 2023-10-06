@@ -3,6 +3,8 @@
 .poker-table {
   box-sizing: content-box;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-flow: row wrap;
   flex-grow: 1;
   background-color: #5e87af;
