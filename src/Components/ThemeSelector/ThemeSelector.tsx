@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTheme } from '../../Context/ThemeContext';
+import './ThemeSelector.scss';
 
 type ThemeOption = 'default' | 'nature' | 'pastel' | 'stable1' | 'stable2' | 'stars' | 'winter';
 
@@ -12,7 +13,7 @@ const ThemeSelector = () => {
   }
 
   return (
-    <select value={theme} onChange={handleThemeChange}>
+    <select className="theme-selector" value={theme} onChange={handleThemeChange}>
       <option value="default">Default</option>
       <option value="nature">Nature</option>
       <option value="pastel">Pastel</option>
