@@ -19,6 +19,42 @@ a {
   box-shadow: 2px 2px 4px rgba(21, 64, 106, 0.8);
   position: relative;
   z-index: 1;
+
+  @media (min-width: 1921px) {
+    height: 40vh;
+    width: 26.67vh;
+    margin: 7.5vh;
+  }
+
+  @media (min-width: 1441px) and (max-width: 1920px) {
+    height: 35vh;
+    width: 23.33vh;
+    margin: 6.25vh;
+  }
+  
+  @media (min-width: 1200px) and (max-width: 1440px) {
+    height: 30vh;
+    width: 20vh;
+    margin: 5vh;
+  }
+
+  @media (min-width: 800px) and (max-width: 1199px) {
+    height: 27.5vh;
+    width: 18.33vh;
+    margin: 4.125vh;
+  }
+
+  @media (min-width: 600px) and (max-width: 799px) {
+    height: 20vh;
+    width: 15vh;
+    margin: 3.75vh;
+  }
+
+  @media (max-width: 599px) {
+    height: 10vh;
+    width: 13.33vh;
+    margin: 2.5vh;
+  }
 }
 
 .card-title {
