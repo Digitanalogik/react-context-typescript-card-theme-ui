@@ -2,8 +2,6 @@ import React from "react";
 import ThemeSelector from "../ThemeSelector/ThemeSelector";
 import "./Header.scss";
 
-//<img src={logo} className="logo shadow" alt="Scrum Poker logo" />
-
 interface HeaderProps {
   label: string;
   player?: string;
