@@ -1,14 +1,10 @@
-import React, { useState } from "react";
-import Card from "../Card/Card";
-import "./Table.scss";
-
-// import backgroundNature from '../../Images/background-nature.jpg';
+import React, { useState } from 'react';
+import { useTheme } from '../../Context/ThemeContext';
+import Card from '../Card/Card';
 
 const Table = (): JSX.Element => {
-  // const [selected, setSelected] = useState(0);
-  // console.log("Creating poker table in room", props.room);
-
-  const [imageUrl] = useState('./background-nature.jpg');
+  const { theme } = useTheme();
+  const [imageUrl] = useState(`${process.env.PUBLIC_URL}/background-${theme}.jpg`);
 
   const renderCards = () => {
     const cards = [];
@@ -24,10 +20,10 @@ const Table = (): JSX.Element => {
   };
 
   return (
-    <div className="poker-table"
-    style={{ backgroundImage: `url(${imageUrl})` }}>
-      {renderCards()}</div>
-    );
+    <div className="poker-table" style={{ backgroundImage: `url(${imageUrl})` }}>
+      {renderCards()}
+    </div>
+  );
 };
 
 export default Table;
