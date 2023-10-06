@@ -25,6 +25,7 @@
   flex-flow: row nowrap;
   align-items: center;
   justify-content: flex-start;
+  margin: 1rem;
 }
 
 .logo {
@@ -35,8 +36,8 @@
 }
 
 .title {
-  margin-left: 5px;
-  font-family: "Squada One", cursive;
+  margin: 1em;
+  font-family: $default-font-family;
   font-size: 24px;
   color: #000000;
   text-shadow: 1px 1px 1px rgba(145, 177, 208, 0.8);
