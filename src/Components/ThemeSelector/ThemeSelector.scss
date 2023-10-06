@@ -1,0 +1,9 @@
+@import '../../Styles/variables.scss';
+
+.theme-selector {
+  font-family: $default-font-family;
+  font-size: 18px;
+  color: #000000;
+  text-shadow: 1px 1px 1px rgba(145, 177, 208, 0.8);
+  border-radius: 3px;
+}
