@@ -1,7 +1,6 @@
 import React, { useState } from "react";
+import { useTheme } from '../../Context/ThemeContext';
 import "./Card.scss";
-
-//import cardNature from '../../Images/card-nature.jpg';
 
 interface CardProps {
   title?: string;
@@ -11,7 +10,8 @@ interface CardProps {
 const Card = (props: CardProps): JSX.Element => {
   //let cardClass = "card-container" + (props.selected ? " selected" : "");
 
-  const [imageUrl] = useState('./card-nature.jpg');
+  const { theme } = useTheme();
+  const [imageUrl] = useState(`${process.env.PUBLIC_URL}/card-${theme}.jpg`);
 
   const  cardClass = "card-container";
   if (typeof props.title === "undefined") {
