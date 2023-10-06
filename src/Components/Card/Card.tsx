@@ -12,14 +12,14 @@ const Card = (props: CardProps): JSX.Element => {
   const [imageUrl, setImageUrl] = useState(`${process.env.PUBLIC_URL}/card-${theme}.jpg`);
 
   useEffect(() => {
-    setImageUrl(`${process.env.PUBLIC_URL}/background-${theme}.jpg`);
+    setImageUrl(`${process.env.PUBLIC_URL}/card-${theme}.jpg`);
   }, [theme])
 
   const  cardClass = "card-container";
   if (typeof props.title === "undefined") {
     return (
       <div className={cardClass}
-      style={{ width: 200, height: 300, backgroundImage: `url(${imageUrl})` }}>
+        style={{ backgroundImage: `url(${imageUrl})` }}>
         <div className="card-value">{props.value}</div>
       </div>
     );
