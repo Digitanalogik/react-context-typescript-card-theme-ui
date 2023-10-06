@@ -12,7 +12,7 @@ const Header = (props: HeaderProps): JSX.Element => {
     <header className="top">
       <div className="brand">
         <div className="title">Scrum Poker</div>
-        <span>{props.label}</span>
+        <span className="label">{props.label}</span>
       </div>
       <ThemeSelector />
     </header>
