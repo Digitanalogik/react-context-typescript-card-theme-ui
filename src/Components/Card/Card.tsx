@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useTheme } from '../../Context/ThemeContext';
 import "./Card.scss";
 
@@ -8,10 +8,12 @@ interface CardProps {
 }
 
 const Card = (props: CardProps): JSX.Element => {
-  //let cardClass = "card-container" + (props.selected ? " selected" : "");
-
   const { theme } = useTheme();
-  const [imageUrl] = useState(`${process.env.PUBLIC_URL}/card-${theme}.jpg`);
+  const [imageUrl, setImageUrl] = useState(`${process.env.PUBLIC_URL}/card-${theme}.jpg`);
+
+  useEffect(() => {
+    setImageUrl(`${process.env.PUBLIC_URL}/background-${theme}.jpg`);
+  }, [theme])
 
   const  cardClass = "card-container";
   if (typeof props.title === "undefined") {

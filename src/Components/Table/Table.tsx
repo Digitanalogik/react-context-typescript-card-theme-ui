@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTheme } from '../../Context/ThemeContext';
 import Card from '../Card/Card';
 
 const Table = (): JSX.Element => {
   const { theme } = useTheme();
-  const [imageUrl] = useState(`${process.env.PUBLIC_URL}/background-${theme}.jpg`);
+  const [imageUrl, setImageUrl] = useState(`${process.env.PUBLIC_URL}/background-${theme}.jpg`);
+
+  useEffect(() => {
+    setImageUrl(`${process.env.PUBLIC_URL}/background-${theme}.jpg`);
+  }, [theme])
 
   const renderCards = () => {
     const cards = [];
