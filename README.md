@@ -1,7 +1,7 @@
 
 # Digitanalogik Scrum Poker
 
-## Experiment to create customizable user interface with React and share sate between components using Context.
+## Experiment to create customizable user interface with React and share common state between components using React  Context.
 
 This project utilizes TypeScript, a typed superset of JavaScript, to provide static type checking and improved developer productivity. By combining TypeScript with React, we are able to build robust and maintainable components that are less prone to errors, ensuring a high-quality codebase for the application.
 
