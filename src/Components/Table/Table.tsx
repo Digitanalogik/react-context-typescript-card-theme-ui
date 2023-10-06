@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from '../../Context/ThemeContext';
 import Card from '../Card/Card';
+import "./Table.scss";
 
 const Table = (): JSX.Element => {
   const { theme } = useTheme();
