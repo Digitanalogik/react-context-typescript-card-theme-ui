@@ -1,9 +1,6 @@
+@import '../../Styles/variables.scss';
+
 .poker-table {
-  position: absolute;
-  top: 40px;
-  left: 0px;
-  width: 100%;
-  height: calc(100% - 40px);
   box-sizing: content-box;
   display: flex;
   flex-flow: row wrap;
